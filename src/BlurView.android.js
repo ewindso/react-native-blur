@@ -37,9 +37,10 @@ class BlurView extends Component {
 
     if (blurRadius != null) {
       if (blurRadius > 25) {
-        throw new Error(
-          `[ReactNativeBlur]: blurRadius cannot be greater than 25! (was: ${blurRadius})`,
-        );
+        return 25;
+        // throw new Error(
+        //   `[ReactNativeBlur]: blurRadius cannot be greater than 25! (was: ${blurRadius})`,
+        // );
       }
       return blurRadius;
     }
